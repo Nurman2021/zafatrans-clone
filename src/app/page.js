@@ -1,10 +1,22 @@
+"use client";
+
 import ZafaSlides from "@/components/ZafaSlides";
+import { Skeleton } from "antd";
+import React, { useState } from "react";
+import BookingForm from "@/components/Booking";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+  setTimeout(() => {
+    setLoading(false);
+  }, 1000);
   return (
-    <main className="pt-[60px] pb-[70px] mx-auto min-h-screen bg-gray-100 w-full sm:w-[400px] px-3 gap-5 flex flex-col">
-      <ZafaSlides />
-      <h1>Fearless</h1>
+    <main className="gap-5 flex flex-col">
+      <title>Home | Zafa Trans Clone Website</title>
+      <Skeleton active loading={loading}>
+        <ZafaSlides />
+      </Skeleton>
+      <BookingForm />
       <img
         src="https://zafatrans.co.id/images/ig/ig-2.png"
         alt="banner-1"
@@ -78,9 +90,9 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="1.2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth={1.2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="tabler-icon tabler-icon-clock "
                       >
                         <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
@@ -96,9 +108,9 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="1.2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth={1.2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="tabler-icon tabler-icon-user "
                       >
                         <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
@@ -135,9 +147,9 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="1.2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth={1.2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="tabler-icon tabler-icon-clock "
                       >
                         <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
@@ -153,9 +165,9 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="1.2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth={1.2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="tabler-icon tabler-icon-user "
                       >
                         <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
@@ -191,9 +203,9 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="1.2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth={1.2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="tabler-icon tabler-icon-clock "
                       >
                         <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
@@ -209,9 +221,9 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="1.2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth={1.2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="tabler-icon tabler-icon-user "
                       >
                         <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
@@ -245,9 +257,9 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="1.2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth={1.2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="tabler-icon tabler-icon-clock "
                       >
                         <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
@@ -263,9 +275,9 @@ export default function Home() {
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
-                        stroke-width="1.2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeWidth={1.2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="tabler-icon tabler-icon-user "
                       >
                         <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
@@ -297,9 +309,9 @@ export default function Home() {
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth={2}
+              strokeLinecap="round"
+              strokeLinejoin="round"
               className="tabler-icon tabler-icon-news "
             >
               <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11"></path>

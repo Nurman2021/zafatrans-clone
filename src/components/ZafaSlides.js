@@ -13,7 +13,7 @@ const ZafaSlides = () => (
     {slideUrl.map((image, index) => (
       <div key={index}>
         <div
-          className="rounded-xl h-52 mt-3"
+          className="rounded-xl h-52"
           style={{
             backgroundImage: `url(${image})`,
             backgroundSize: "cover",
