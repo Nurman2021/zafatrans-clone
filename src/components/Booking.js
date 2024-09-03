@@ -5,29 +5,38 @@ const BookingForm = () => {
   return (
     <div className="relative rounded-md shadow-md bg-white p-4">
       <Form name="item_form" layout="vertical">
-        <Tabs className="card-tabs" tabBarStyle={{ color: "#d90007" }}>
-          <Tabs.TabPane tab="Pesan Tiket" key="pesan_tiket">
+        <Tabs>
+          <Tabs.TabPane
+            tab={<span style={{ color: "#d90007" }}>Pesan Tiket</span>}
+            key="pesan_tiket"
+          >
             <Form.Item
               rules={[{ required: true }]}
               label={"Lokasi Dari"}
               required
             >
-              <Select defaultValue="Makassar">
-                <Option value="makassar">Makassar</Option>
-                <Option value="mamuju">Mamuju</Option>
-                <Option value="palopo">Palopo</Option>
-              </Select>
+              <Select
+                defaultValue="makassar"
+                options={[
+                  { value: "makassar", label: "Makassar" },
+                  { value: "mamuju", label: "Mamuju" },
+                  { value: "palopo", label: "Palopo" },
+                ]}
+              />
             </Form.Item>
             <Form.Item
               rules={[{ required: true }]}
               label={"Lokasi Tujuan"}
               required
             >
-              <Select defaultValue="Makassar">
-                <Option value="makassar">Makassar</Option>
-                <Option value="mamuju">Mamuju</Option>
-                <Option value="palopo">Palopo</Option>
-              </Select>
+              <Select
+                defaultValue="makassar"
+                options={[
+                  { value: "makassar", label: "Makassar" },
+                  { value: "mamuju", label: "Mamuju" },
+                  { value: "palopo", label: "Palopo" },
+                ]}
+              />
             </Form.Item>
             <Form.Item
               name={["description"]}

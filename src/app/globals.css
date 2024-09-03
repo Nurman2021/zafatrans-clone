@@ -21,6 +21,10 @@
   background: #616264e0;
 }
 
+.activeTab {
+  color: #d90007 !important; /* Menggunakan !important untuk memastikan gaya diterapkan */
+}
+
 /* animate for zara logo */
 
 /***************************************************
